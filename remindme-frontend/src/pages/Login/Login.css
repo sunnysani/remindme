@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* latin-ext */
+.p { 
+    text-align: center ;
+    font-family: 'DM-Sans', sans-serif;
+}
+
+.login-square-box label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.login-google-image {
+    width: 30px;
+}
+
+#login-signup {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    font-family: 'DM Sans', sans-serif;
+    margin: 44px auto 55px;
+}
+
+#login-signup .pilih-role {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+    text-align: left;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+#login-signup .pilih-role a {
+    color: #000;
+}
+
+#login-signup .pilih-role a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+.login-button {
+    border: none;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 5px;
+    width : 380px;
+    transition-duration: 0.3s;
+    margin: 10px 0px;
+}
+
+.login-square-box {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+.login-square-box .picture-section {
+    width: 35%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #0E2560;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.login-square-box .picture-section .ornament-left {
+    position: absolute;
+    left: 2.1rem;
+    bottom: 4.5rem;
+    width: 70%;
+}
+
+.login-square-box .picture-section .login-icon {
+    height: 100px;
+    margin: auto auto 10px;
+}
+
+.login-square-box .picture-section .login-title {
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 15px;
+    max-width: fit-content;
+    margin: 10px auto auto;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.login-square-box .form-section {
+    padding: 30px 50px;
+    width: 65%;
+}
+
+.login-centered {
+    padding-top: 16px;
+    text-align: left;
+}
+
+.login-form-container {
+    padding-bottom: 16px;
+}
+
+.login-form-container ::placeholder {
+    font-size: 15px;
+}
+
+.login-centered input, select, textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-to-login {
+    padding-top: 8px;
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+}
+
+.remindme-blue-button {
+    background-color: #DC0B0B;
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 25rem;
+}
+
+.remindme-blue-button:hover{
+    background-color: white;
+    border: 2px solid #DC0B0B;
+    color: #DC0B0B;
+}

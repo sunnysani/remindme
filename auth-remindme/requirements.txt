@@ -1,0 +1,16 @@
+coverage>=5.3,<6.0
+django-cors-headers==3.7.0
+dj-database-url>=0.5.0
+django-cors-headers==3.7.0
+djangogrpcframework>=0.2.1
+djangorestframework==3.11.0
+djangorestframework-camel-case==1.2.0
+djangorestframework-simplejwt>=4.4.0
+Django>=3.1.0,<4.0.0
+gunicorn>=20.0.0,<21.0.0
+grpcio>=1.46.3
+grpcio-tools>=1.5.2
+psycopg2-binary>=2.8.0,<3.0.0
+selenium>=3.141.0,<4.0.0
+whitenoise>=5.2.0,<6.0.0
+requests==2.27.1

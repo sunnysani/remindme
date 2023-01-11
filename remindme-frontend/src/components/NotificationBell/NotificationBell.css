@@ -1,0 +1,83 @@
+.remindme-notification-bell img {
+    width: 30px;
+}
+
+.remindme-notification-bell #notification-count {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    top: -6px;
+    left: -6px;
+    padding: 10px;
+}
+
+.remindme-notification-bell #notification-count p {
+    margin: 0;
+    transform: translate(10%, 5%);
+}
+
+.remindme-notification-bell button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    position: absolute;
+    right: 0px;
+}
+
+#remindme-notification-box {
+    border: solid 1px black;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    border-radius: 10px;
+    width: 400px;
+    z-index: 99999;
+    background-color: white;
+}
+
+ul {
+    margin: 0px;
+}
+
+li {
+    line-height: 2;
+}
+
+ul p {
+    text-align: center;
+    font-style: italic;
+    margin: 0px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+.scrollbar-primary {
+    scrollbar-color: #546FB2 #f5f5f500;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f5f5f500;
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #546FB2;
+}
+
+.scrollbar-danger {
+    scrollbar-color: #ff3547 #f5f5f5;
+}

@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    container_name: tk-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=remindme_db
+    ports:
+      - "5432:5432"
+    stdin_open: true
+    tty: true

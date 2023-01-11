@@ -1,0 +1,28 @@
+stages:
+  - test
+  - production
+
+# test:
+#   image: node:latest
+#   stage: test
+#   script:
+#     - npm install
+#     - npm run test
+#   only:
+#     - master
+
+Production:
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+  stage: production
+  image: ruby:2.7
+  before_script:
+    - gem install dpl
+    - wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  script:
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+    - heroku run --app $HEROKU_APP_NAME migrate
+  environment:
+    name: production
+    url: https://$HEROKU_APP_NAME.herokuapp.com
+

@@ -1,0 +1,116 @@
+.remindme-notification {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.remindme-notification-reminder {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 5px #00000030);
+    border-radius: 10px;
+    background-color: #FFF;
+
+    margin-left: 2em;
+    padding: 1.5em;
+}
+
+.remindme-notification-scheduler {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 5px #00000030);
+    border-radius: 10px;
+    background-color: #FFF;
+
+    margin-right: 2em;
+    padding: 1.5em;
+}
+
+.remindme-notification-title {
+    text-align: center;
+    font-weight: 900;
+    color: #0E2560;
+    margin-bottom: 1em;
+}
+
+.remindme-notification-item {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remindme-notification-item-content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.remindme-notification-item-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 0 0 0;
+    width: auto;
+}
+
+.remindme-notification-item-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    transform: translateY(-4px);
+    color: #0E2560;
+}
+
+.remindme-notification-item-delete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remindme-notification-item-delete p {
+    color: #DC0B0B;
+    font-size: 12px;
+    max-width: 10em;
+    margin: 0 0 0 1em;
+}
+
+.remindme-notification-item-create {
+    cursor: pointer;
+    transform: translate(7px,7px);
+    margin-top: 1em;
+}
+
+.remindme-notification-nothing {
+    color: rgba(103, 103, 103, 0.651);
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
+
+.remindme-modal-header-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.remindme-modal-header {
+    text-align: center;
+    font-weight: 900;
+    color: #0E2560;
+    margin: 0;
+}
+
+.remindme-modal-body {
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}

@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  postgres:
+    image: arm64v8/mysql:oracle
+    container_name: tk-mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=fdec14b1dd13d2143b3260e5a6efa94eaf285c6d9fc0c378ec8077f9d1f9511f
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=mysql
+      - MYSQL_DATABASE=remindme_db
+    ports:
+      - "3306:3306"
+    stdin_open: true
+    tty: true

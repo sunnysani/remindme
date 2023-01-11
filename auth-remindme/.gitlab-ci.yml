@@ -1,0 +1,18 @@
+image: python:3.8
+stages:
+  - deploy
+
+Deployment:
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+  image: ruby:2.7
+  stage: deploy
+  before_script:
+    - gem install dpl
+    - wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  script:
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+    - heroku run --app $HEROKU_APP_NAME migrate
+  environment:
+    name: production
+    url: https://$HEROKU_APP_NAME.herokuapp.com

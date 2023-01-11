@@ -1,0 +1,6 @@
+.idea/
+nimbledeps/
+bin/
+.env
+db.sqlite
+**__pycache__/
